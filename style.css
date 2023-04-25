@@ -1,0 +1,114 @@
+* {
+font-family: 'Barlow Semi Condensed', sans-serif;  
+}
+
+body {
+    display:flex;
+    height: 98vh;
+    width: 99%;
+    justify-content: center;
+    align-items:center;
+    background-color: hsl(216, 42%, 95%);
+}
+
+.mainc {
+    display:grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 1500px;
+    height: 600px;
+    background-color: hsl(216, 42%, 95%);
+    gap: 20px;
+}
+
+.purple {
+    grid-area: 1 / 1 / 1 / 3;
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80% 0%;
+    background-size: 25%;
+    color: hsl(210, 46%, 95%);
+}
+
+
+
+.grey {
+    grid-area: 1 / 3 / 1 / 4;
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(210, 46%, 95%);
+
+
+}
+
+.white1 {
+    grid-area: 1 / 4 / 3 / 5;
+    background-color: white;
+    color: hsl(217, 19%, 35%);
+
+}
+
+.white2 {
+    grid-area: 2 / 1 / 2 / 2;
+    background-color: white;
+    color: hsl(217, 19%, 35%);
+
+}
+
+.black {
+    grid-area: 2 / 2 / 3 / 4;
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(210, 46%, 95%);
+}
+
+.subc {
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.namebox {
+    display: flex;
+    }
+
+.namebox img {
+        border-radius: 50%;
+        margin-right: 15px;
+        background-color: white;
+        width: 30px;
+        height: 30px;
+        border: hsl(0, 0%, 84%) 2px solid;
+}
+
+.namebox p {
+    margin-top: 0;
+    line-height: 15px;
+}
+
+.namebox span {
+    opacity: 0.5;
+    font-size: 13px;
+}
+
+.transperenttxt {
+    opacity: 0.5;
+    line-height: 24px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .mainc {
+        display: flex;
+        flex-direction: column;
+        margin: 0 25px;
+    }
+}
+
+/* BORDER--------------- */
+
+.purple img {
+        border: hsl(264, 82%, 70%) 2px solid;
+}
+
+.black img {
+        border: hsl(263, 55%, 52%) 2px solid;
+}
